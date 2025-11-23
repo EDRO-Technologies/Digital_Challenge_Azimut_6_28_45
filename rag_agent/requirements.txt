@@ -1,0 +1,20 @@
+pypdf2>=3.0.0
+pdfplumber>=0.10.0
+python-docx>=1.1.0
+striprtf>=0.0.26
+sentence-transformers>=2.2.0
+# faiss-gpu недоступен через pip на Windows
+# Для установки faiss-gpu используйте conda: conda install -c pytorch -c nvidia faiss-gpu
+# Или используйте faiss-cpu (GPU будет использоваться для создания эмбеддингов, поиск на CPU)
+faiss-cpu>=1.7.4  # Для работы на CPU (GPU используется для эмбеддингов)
+numpy>=1.24.0
+accelerate>=0.20.0  # Для работы с device_map и оптимизации моделей на GPU
+# torch и torchvision устанавливаются отдельно для GPU:
+# pip install torch torchvision --extra-index-url https://download.pytorch.org/whl/cu128
+
+# API сервер
+fastapi>=0.104.0
+uvicorn[standard]>=0.24.0
+pydantic>=2.0.0
+requests>=2.31.0  # Для работы с Ollama API
+

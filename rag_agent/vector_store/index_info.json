@@ -1,0 +1,5 @@
+{
+  "dimension": 1024,
+  "num_vectors": 267,
+  "index_type": "IndexFlatL2"
+}
